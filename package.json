@@ -1,5 +1,6 @@
 {
   "name": "2019-3-20-react-testing-example",
+  "homepage": "https://TylerSchum.github.io/sample-cicd",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,8 +24,8 @@
     "eject": "react-scripts eject",
     "coverage": "react-scripts test --env=jsdom --coverage",
     "docker": "docker-compose up --build",
-    "docker:test": "docker exec -it 2019-3-20-react-testing-example_web_1 npm run test",
-    "docker:coverage": "docker exec -it 2019-3-20-react-testing-example_web_1 npm run coverage"
+    "docker:test": "docker-compose exec web npm run test",
+    "docker:coverage": "docker-compose exec web npm run coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
